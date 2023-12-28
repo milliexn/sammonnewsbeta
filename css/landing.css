@@ -1,0 +1,36 @@
+#film-strip-content img{
+    background-color: grey;
+    /* padding: 11.8vw 15.7vw 11.8vw 15.7vw; */
+    max-width: 25vw;
+    height: auto;
+    border-radius: min(3vh,3vw);
+    margin-right: 1.1vw;
+}
+#film-strip-content::before{
+    content: "▊▊▊▊";
+    color: var(--color);
+    letter-spacing: 4.3vw;
+    font-size: max(2.3vw,1.2vh);
+    position: relative;
+    bottom: 2.5%;
+    left: 7%;
+    transition: 0.4s;
+}
+#film-strip-content::after{
+    content: "▊▊▊▊";
+    color: var(--color);
+    letter-spacing: 4.3vw;
+    font-size: max(2.3vw,1.2vh);
+    position: relative;
+    left: 7%;
+    transition: 0.4s;
+}
+
+#film-strip-border{    
+    background-color: #0b0b0b;
+    padding: 1%;
+    margin:0 -2.5% 0 -2.5%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
